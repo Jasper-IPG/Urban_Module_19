@@ -1,0 +1,17 @@
+{% extends 'menu.html' %}
+
+{% block title %}Игры Nintendo{% endblock %}
+
+{% block pagename %}<h1>{{ title }}</h1>{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for game in games %}
+            <li><h3>
+                {{ game.title }} | {{ game.description }}. Стоимость: {{ game.cost }}
+                <button>Купить</button>
+            </h3></li>
+        {% endfor %}
+    </ul>
+    <button><a href="/">Вернуться на главную</a></button>
+{% endblock %}
