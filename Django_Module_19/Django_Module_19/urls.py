@@ -25,4 +25,5 @@ urlpatterns = [
     path('NS/', switch_games),
     path('cart/', cart),
     path('registration/', registration),
+    path('news/', news),
 ]
